@@ -388,6 +388,12 @@
       "address": "0x3136ef851592acf49ca4c825131e364170fa32b3",
       "symbol":"COFI", 
       "usd_id":"2478"
+    },
+    "SURE":{
+      "name": "Surety token",
+      "decimal": 6,
+      "address": "0x95382ac82e886a367bac9e1e23beabe569bcfed8",
+      "symbol":"SURE"
     }
   },
   "reserve": "0x2c5a182d280eeb5824377b98cd74871f78d6b8bc",
