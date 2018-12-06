@@ -30,77 +30,88 @@
       "icon": "eth.svg",
       "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
       "decimals": 18,
-      "cmc_id":"1027"
+      "cmc_id":"1027",
+      "cg_id": "ethereum"
     },
     "WETH": {
       "name": "Wrapped Ether",
       "symbol" : "WETH",
       "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
       "decimals": 18,
-      "cmc_id":"2396"
+      "cmc_id":"2396",
+      "cg_id": "weth"
     },
     "KNC": {
       "name": "KyberNetwork",
       "symbol": "KNC",
       "address": "0xdd974d5c2e2928dea5f71b9825b8b646686bd200",
       "decimals": 18,
-      "cmc_id":"1982"
+      "cmc_id":"1982",
+      "cg_id": "kyber-network"
     },
     "DAI": {
       "name" : "DAI",
       "symbol": "DAI",
       "address": "0x89d24a6b4ccb1b6faa2625fe562bdd9a23260359",
       "decimals": 18,
-      "cmc_id":"2308"
+      "cmc_id":"2308",
+      "cg_id": "dai"
     },
     "OMG": {
       "name": "OmiseGO",
       "symbol": "OMG",
       "address": "0xd26114cd6ee289accf82350c8d8487fedb8a0c07",
       "decimals": 18,
-      "cmc_id":"1808"
+      "cmc_id":"1808",
+      "cg_id": "omisego"
     },
     "SNT": {
       "name":"Status",
       "address": "0x744d70fdbe2ba4cf95131626614a1763df805b9e",
       "symbol": "SNT",
       "decimals": 18,
-      "cmc_id":"1759"
+      "cmc_id":"1759",
+      "cg_id": "status"
     },
     "ELF": {
       "name":"Aelf",
       "address": "0xbf2179859fc6d5bee9bf9158632dc51678a4100e",
       "symbol": "ELF",
       "decimals": 18,
-      "cmc_id":"2299"
+      "cmc_id":"2299",
+      "cg_id": "aelf"
     },
     "POWR": {
       "name":"Power Ledger",
       "address": "0x595832f8fc6bf59c85c527fec3740a1b7a361269",
       "symbol": "POWR",
       "decimals": 6,
-      "cmc_id":"2132"
+      "cmc_id":"2132",
+      "cg_id": "power-ledger"
     },
     "MANA": {
       "name":"Mana",
       "address": "0x0f5d2fb29fb7d3cfee444a200298f468908cc942",
       "symbol": "MANA",
       "decimals": 18,
-      "cmc_id":"1966"
+      "cmc_id":"1966",
+      "cg_id": "decentraland"
     },
     "BAT": {
       "name":"Basic Attention Token",
       "address": "0x0d8775f648430679a709e98d2b0cb6250d2887ef",
       "symbol": "BAT",
       "decimals": 18,
-      "cmc_id":"1697"
+      "cmc_id":"1697",
+      "cg_id": "basic-attention-token"
     },
     "REQ": {
       "name":"Request",
       "address": "0x8f8221afbb33998d8584a2b05749ba73c37a938a",
       "symbol": "REQ",
       "decimals": 18,
-      "cmc_id":"2071"
+      "cmc_id":"2071",
+      "cg_id": "request-network"
     },
     "GTO": {
       "name":"Gifto",

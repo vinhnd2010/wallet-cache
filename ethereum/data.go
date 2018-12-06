@@ -38,6 +38,7 @@ type Token struct {
 	Decimal    int    `json:"decimals"`
 	UsdId      string `json:"cmc_id"`
 	DelistTime uint64 `json:"delist_time"`
+	CGId       string `json:"cg_id"`
 }
 
 type QuoInfo struct {
@@ -109,4 +110,39 @@ func NewMarketInfo(quotes map[string]QuoInfo, rates *Rates) *MarketInfo {
 type TokenConfig struct {
 	Success bool    `json:"success"`
 	Data    []Token `json:"data"`
+}
+
+type CurrencyData struct {
+	ETH float64 `json:"eth"`
+	USD float64 `json:"usd"`
+}
+
+type TokenInfoCoinGecko struct {
+	MarketData struct {
+		MarketCap CurrencyData `json:"market_cap"`
+		Volume24H CurrencyData `json:"total_volume"`
+	} `json:"market_data"`
+}
+
+func (tokenInfo TokenInfoCoinGecko) ToTokenInfoCMC() TokenGeneralInfo {
+	quotes := make(map[string]QuoInfo)
+	quotes["ETH"] = QuoInfo{
+		MarketCap: tokenInfo.MarketData.MarketCap.ETH,
+		Volume24h: tokenInfo.MarketData.Volume24H.ETH,
+	}
+	quotes["USD"] = QuoInfo{
+		MarketCap: tokenInfo.MarketData.MarketCap.USD,
+		Volume24h: tokenInfo.MarketData.Volume24H.USD,
+	}
+	return TokenGeneralInfo{
+		Quotes: quotes,
+	}
+}
+
+type RateUSDCG struct {
+	MarketData struct {
+		CurrentPrice struct {
+			USD float64 `json:"usd"`
+		} `json:"current_price"`
+	} `json:"market_data"`
 }

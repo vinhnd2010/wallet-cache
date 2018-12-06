@@ -67,8 +67,8 @@ func (self *InfoData) UpdateListToken(tokens map[string]ethereum.Token) {
 	finalListToken := make(map[string]ethereum.Token)
 	for symbol, token := range tokens {
 		if currentToken, ok := currentListToken[symbol]; ok {
-			if token.UsdId == "" {
-				token.UsdId = currentToken.UsdId
+			if token.CGId == "" {
+				token.CGId = currentToken.CGId
 			}
 		}
 		finalListToken[symbol] = token
@@ -286,7 +286,7 @@ func (self *Fetcher) GetGeneralInfoTokens() map[string]*ethereum.TokenGeneralInf
 		if token.UsdId != "" {
 			//usdId = append(usdId, token.UsdId)
 			for _, fetIns := range self.fetIns {
-				result, err := fetIns.GetGeneralInfo(token.UsdId)
+				result, err := fetIns.GetGeneralInfo(token.CGId)
 				if err != nil {
 					log.Print(err)
 					continue
